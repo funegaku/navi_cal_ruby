@@ -1,3 +1,5 @@
+# Michio FUJII, fune-gaku.com
+
 module Nav_cal
 
 	#deg to radian
