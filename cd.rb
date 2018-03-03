@@ -72,7 +72,7 @@ class Co_Dist
 	def distance
 
 		if (@dmp).abs <= 0.0001
-			dist = @dlong / Math.cos( Nav_cal.to_rad(@lat1) ) * 60.0
+			dist = ( @dlong * Math.cos( Nav_cal.to_rad(@lat1) ) * 60.0 ).abs
 		else
 			dist = @dlat / Math.cos( @rad_co ) * 60.0
 		end
